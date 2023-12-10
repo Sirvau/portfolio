@@ -4,7 +4,7 @@ h1 {
   font-family: "Quattrocento", "Times New Roman", "Open Sans";
   font-weight: 400;
   letter-spacing: 1px;
-  font-size: 30px;
+  font-size: 25px;
   text-transform: uppercase;
 }
 
@@ -33,7 +33,7 @@ body {
 /* Images, logo, and icons*/
 
 .logo {
-  max-width: 100%;
+  max-width: 80%;
 }
 
 .images {

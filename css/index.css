@@ -16,7 +16,7 @@ header {
   border-top: 4px solid #f2e9e4;
   border-bottom: 4px solid #252e3c;
   margin: auto 0;
-  padding: 60px 0 20px;
+  padding: 50px 0 20px;
 }
 
 #about_me_header_image_and_icons,
@@ -36,7 +36,7 @@ header {
 
 #signature {
   font-family: "The Girl Next Door", cursive;
-  font-size: 25px;
+  font-size: 22px;
 }
 
 .fa-caret-down {
@@ -51,7 +51,7 @@ h1 {
 #profile_image {
   border: 10px solid #252e3c;
   border-radius: 50%;
-  max-width: 85%;
+  max-width: 80%;
 }
 
 #projects_section {
