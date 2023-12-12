@@ -18,6 +18,8 @@ p {
   letter-spacing: 0.5px;
   line-height: 25px;
   font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 0;
 }
 
 .highlighted_text {
@@ -47,4 +49,71 @@ body {
 
 .images {
   max-width: 100%;
+}
+
+@media screen and (min-width: 428px) {
+  h1 {
+    font-size: 28px;
+  }
+  p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  h1 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 540px) {
+  h1 {
+    font-size: 32px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 35px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 34px;
+  }
+  p {
+    font-size: 22px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (min-width: 880px) {
+  .logo {
+    max-width: 50%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+}
+
+@media screen and (min-width: 1280px) {
+}
+
+@media screen and (min-width: 1440px) {
+}
+
+@media screen and (min-width: 1680px) {
+}
+
+@media screen and (min-width: 1780px) {
+}
+
+@media screen and (min-width: 1920px) {
+}
+
+@media screen and (min-width: 2100px) {
 }

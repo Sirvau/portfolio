@@ -12,11 +12,12 @@ header {
 }
 
 #about_me_section {
+  overflow: hidden;
   background-color: #6c4f2a;
   border-top: 4px solid #f2e9e4;
   border-bottom: 4px solid #252e3c;
-  margin: auto 0;
-  padding: 50px 0 20px;
+  margin: 0;
+  padding: 50px 0 40px;
 }
 
 #about_me_header_image_and_icons,
@@ -39,11 +40,6 @@ header {
   font-size: 22px;
 }
 
-.fa-caret-down {
-  color: #f2e9e4;
-  font-size: 40px;
-}
-
 h1 {
   margin: 0 0 30px 0;
 }
@@ -60,4 +56,133 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+@media screen and (min-width: 428px) {
+  header {
+    padding-top: 100px;
+    padding-bottom: 130px;
+  }
+
+  .wrapper {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  #about_me_section {
+    padding-top: 90px;
+  }
+
+  #profile_image {
+    max-width: 90%;
+    border: 12px solid #252e3c;
+  }
+
+  #signature {
+    font-size: 26px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  header {
+    padding-top: 60px;
+    padding-bottom: 90px;
+  }
+
+  #about_me_section {
+    padding-top: 80px;
+  }
+
+  #signature {
+    font-size: 28px;
+  }
+}
+
+@media screen and (min-width: 540px) {
+  header {
+    padding-bottom: 80px;
+  }
+
+  #profile_image {
+    max-width: 85%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  header {
+    padding-top: 40px;
+  }
+
+  #profile_image {
+    max-width: 75%;
+  }
+  #signature {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+
+  #about_me_section {
+    padding-bottom: 90px;
+  }
+
+  #profile_image {
+    max-width: 60%;
+  }
+}
+
+@media screen and (min-width: 880px) {
+  header {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  #about_me_section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .wrapper {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #about_me_header_image_and_icons {
+    margin-top: 5px;
+    padding-top: 40px;
+  }
+
+  #profile_image {
+    max-width: 70%;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+}
+
+@media screen and (min-width: 1280px) {
+}
+
+@media screen and (min-width: 1440px) {
+}
+
+@media screen and (min-width: 1680px) {
+}
+
+@media screen and (min-width: 1780px) {
+}
+
+@media screen and (min-width: 1920px) {
+}
+
+@media screen and (min-width: 2100px) {
 }
