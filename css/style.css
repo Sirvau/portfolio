@@ -20,6 +20,11 @@ p {
   font-size: 16px;
 }
 
+.highlighted_text {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
 /* Colours*/
 
 body {
