@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 /* Font families, font-weight and font sizes*/
 
 h1 {

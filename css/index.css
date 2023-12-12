@@ -3,7 +3,7 @@ header {
   justify-content: center;
   align-items: center;
   margin-bottom: auto;
-  padding: 3px 20px 70px;
+  padding: 10px 20px 70px;
 }
 
 .wrapper {
@@ -51,7 +51,7 @@ h1 {
 #profile_image {
   border: 10px solid #252e3c;
   border-radius: 50%;
-  max-width: 80%;
+  max-width: 90%;
 }
 
 #projects_section {
