@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-/* Font families, font-weight and font sizes*/
+/* Typography*/
 
 h1 {
   font-family: "Quattrocento", "Times New Roman", "Open Sans";
@@ -12,12 +12,16 @@ h1 {
   text-transform: uppercase;
 }
 
-p {
+p,
+button {
   font-family: "Quattrocento Sans", "Arial", "Open Sanse";
   font-weight: 400;
   letter-spacing: 0.5px;
-  line-height: 25px;
   font-size: 16px;
+}
+
+p {
+  line-height: 25px;
   margin-top: 20px;
   margin-bottom: 0;
 }
