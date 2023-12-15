@@ -42,6 +42,11 @@
             src="./images/profile_image.jpg"
             alt="Siril Olsen Vaular profile image"
           />
+          <div class="icons contact_icons">
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-solid fa-envelope"></i>
+            <i class="fa-solid fa-mobile-screen-button"></i>
+          </div>
         </div>
         <div id="about_me_body_text_and_signature" class="wrapper">
           <p class="light_text">
@@ -54,10 +59,9 @@
             currently immersed in frontend studies at Noroff School of
             Technology and Digital Media. Besides being a true crime junkie, I
             have a keen interest in people, delectable food and wine, the great
-            outdoors, and of course, coding and design.
+            outdoors, and of course, coding and design
             <span id="dots">...</span>
           </p>
-
           <span id="more">
             <p class="light_text">
               From crafting handbags out of old cloth scraps to developing
@@ -88,8 +92,86 @@
       </section>
       <section id="projects_section">
         <h1 class="dark_text">Projects</h1>
+        <div class="slideshow_container">
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img class="images" src="./images/Christmas_blog (2).png" />
+            <div class="text">
+              <h2 class="card_name">Christmas Blog</h2>
+              <p class="card_description">
+                Christmas Blog containing fetched posts from WordPress API
+              </p>
+              <p class="card_description">HTML | CSS | Vanilla JS | WP API</p>
+              <a href="#" class="card_button weblink"
+                >Webpage<i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+              <a href="#" class="card_button github"
+                >Github Repo<i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img class="images" src="./images/Rainydays_with_background.png" />
+            <div class="text">
+              <h2 class="card_name">Rainydays</h2>
+              <p class="card_description">
+                E-commerce website selling rainjackets for men and women.
+              </p>
+              <p class="card_description">HTML | CSS | Vanilla JS | API</p>
+              <a href="#" class="card_button weblink"
+                >Webpage<i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+              <a href="#" class="card_button github"
+                >Github Repo<i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img class="images" src="./images/museum.png" />
+            <div class="text">
+              <h2 class="card_name">Community Science Museum</h2>
+              <p class="card_description">
+                Website for a local comumunity science museum, aimed at
+                inquisitive children.
+              </p>
+              <p class="card_description">HTML | CSS</p>
+              <a href="#" class="card_button weblink"
+                >Webpage<i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+              <a href="#" class="card_button github"
+                >Github Repo<i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+          </div>
+        </div>
       </section>
+
+      <!-- The dots/circles -->
+      <div class="dots_and_buttons_container">
+        <a class="prev">&#10094;</a>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <a class="next">&#10095;</a>
+      </div>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="icons contact_icons">
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-solid fa-envelope"></i>
+        <i class="fa-solid fa-mobile-screen-button"></i>
+      </div>
+      <div class="logo_footer">
+        <img
+          id="logo_bottom"
+          src="./images/logo_light_version.png"
+          alt="Siril Olsen Vaular logo"
+        />
+      </div>
+    </footer>
   </body>
 </html>

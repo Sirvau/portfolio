@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Header */
 header {
   display: flex;
   justify-content: center;
@@ -6,11 +11,13 @@ header {
   padding: 3px 20px 60px;
 }
 
+/* Wrapper */
 .wrapper {
   margin-left: 20px;
   margin-right: 20px;
 }
 
+/* About Me Section */
 #about_me_section {
   overflow: hidden;
   background-color: #6c4f2a;
@@ -37,11 +44,16 @@ header {
 
 #signature {
   font-family: "The Girl Next Door", cursive;
+}
+
+#signature {
   font-size: 22px;
 }
 
 h1 {
-  margin: 0 0 30px 0;
+  margin: 20px 0;
+  text-align: center;
+  display: block;
 }
 
 #profile_image {
@@ -50,6 +62,7 @@ h1 {
   max-width: 85%;
 }
 
+/* Projects Section */
 #projects_section {
   margin-top: 20px;
   padding-top: 50px;
@@ -58,31 +71,181 @@ h1 {
   align-items: center;
 }
 
-.material-symbols-outlined {
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
-}
-
 #more {
   display: none;
-}
-
-#read_more_button {
-  margin-top: 20px;
-  padding: 10px 105px;
-  border: none;
-  border-radius: 5px;
-  box-shadow: none;
-  background-color: #f2e9e4;
-  border: none;
-}
-
-#read_more_button .fa-chevron-down {
-  color: #252e3c;
 }
 
 #best_regards,
 #signature {
   margin-top: 50px;
+}
+
+.rainydays_image,
+.christmas_blog_image,
+.museum_image {
+  display: block;
+  width: auto;
+  height: auto;
+}
+
+/* Card Section */
+.slideshow_container {
+  max-width: 85%;
+  height: auto;
+  position: relative;
+  margin: auto;
+  border: 4px solid #252e3c;
+}
+
+.mySlides {
+  display: none;
+}
+
+.card_description {
+  margin-bottom: 40px;
+  margin-top: 0;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #252e3c;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  font-size: 25px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #252e3c;
+  font-size: 15px;
+  padding: 8px 12px;
+  bottom: 8px;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dots_and_buttons_container {
+  text-align: center;
+  margin: 30px 0 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*Buttons*/
+
+.card_button {
+  display: inline-block;
+  border-radius: 10px;
+  margin-bottom: 20px;
+
+  text-decoration: none;
+}
+
+#read_more_button {
+  margin-top: 30px;
+  width: 100%;
+  border: 2px solid #f2e9e4;
+  background-color: #6c4f2a;
+  color: #f2e9e4;
+}
+
+#read_more_button:hover {
+  color: #252e3c;
+}
+
+#read_more_button,
+.weblink,
+.github {
+  padding: 12px 45px;
+  border-radius: 5px;
+  box-shadow: none;
+}
+
+.weblink {
+  background-color: #b5bcc6;
+  color: #252e3c;
+  border: none;
+}
+
+#read_more_button:hover,
+.weblink:hover,
+.github:hover {
+  background-color: #f2e9e4;
+}
+
+.weblink:hover {
+  border: 2px solid #b5bcc6;
+  color: #252e3c;
+}
+
+.github {
+  background-color: #252e3c;
+  color: #f2e9e4;
+  padding: 12px 36px;
+  border: none;
+}
+
+.github:hover {
+  border: 2px solid #252e3c;
+  color: #252e3c;
+}
+
+#logo_bottom {
+  max-width: 40%;
+  margin: auto;
 }
 
 @media screen and (min-width: 428px) {

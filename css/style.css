@@ -2,19 +2,28 @@
   box-sizing: border-box;
 }
 
-/* Typography*/
-
-h1 {
+/* Typography */
+h1,
+h2 {
   font-family: "Quattrocento", "Times New Roman", "Open Sans";
   font-weight: 400;
   letter-spacing: 1px;
+}
+
+h1 {
   font-size: 25px;
   text-transform: uppercase;
 }
 
+h2 {
+  font-size: 22px;
+}
+
 p,
-button {
-  font-family: "Quattrocento Sans", "Arial", "Open Sanse";
+button,
+.card_button,
+.numbertext {
+  font-family: "Quattrocento Sans", "Arial", "Open Sans";
   font-weight: 400;
   letter-spacing: 0.5px;
   font-size: 16px;
@@ -22,21 +31,49 @@ button {
 
 p {
   line-height: 25px;
-  margin-top: 20px;
   margin-bottom: 0;
 }
 
+/* Highlighted text */
 .highlighted_text {
   font-weight: 700;
   letter-spacing: 1px;
 }
 
-/* Colours*/
-
+/* Body and Footer */
 body {
   background-color: #f2e9e4;
 }
 
+footer {
+  background-color: #252e3c;
+  padding-top: 30px;
+  margin-top: 100px;
+}
+
+.logo_footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+
+/* Icons and Images */
+.contact_icons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 30px;
+  color: #f2e9e4;
+  margin-top: 20px;
+}
+
+i {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Text colors */
 .light_text {
   color: #f2e9e4;
 }
@@ -45,14 +82,15 @@ body {
   color: #252e3c;
 }
 
-/* Images, logo, and icons*/
-
-.logo {
-  max-width: 80%;
-}
+/* Max-width for images and logo */
 
 .images {
   max-width: 100%;
+  overflow: hidden;
+}
+
+.logo {
+  max-width: 80%;
 }
 
 @media screen and (min-width: 428px) {
