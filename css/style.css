@@ -164,14 +164,68 @@ i {
 @media screen and (min-width: 1440px) {
 }
 
-@media screen and (min-width: 1680px) {
+@media screen and (min-width: 1500px) {
 }
 
-@media screen and (min-width: 1780px) {
+@media screen and (min-width: 1680px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  p,
+  button,
+  .github,
+  .weblink {
+    font-size: 22px;
+  }
+
+  p {
+    line-height: 40px;
+  }
 }
 
 @media screen and (min-width: 1920px) {
+  h1 {
+    font-size: 38px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  p,
+  button,
+  .github,
+  .weblink {
+    font-size: 24px;
+  }
+
+  p {
+    line-height: 45px;
+  }
 }
 
 @media screen and (min-width: 2100px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  p,
+  button,
+  .github,
+  .weblink {
+    font-size: 26px;
+  }
+
+  p {
+    line-height: 50px;
+  }
 }
