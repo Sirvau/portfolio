@@ -370,13 +370,12 @@ h1 {
 
 @media screen and (min-width: 880px) {
   header {
-    padding-top: 130px;
-    padding-bottom: 130px;
+    padding-top: 170px;
+    padding-bottom: 170px;
   }
 
   #about_me_section {
-    padding-top: 120px;
-    padding-bottom: 60px;
+    padding-top: 140px;
   }
 
   .wrapper {
