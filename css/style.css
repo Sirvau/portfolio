@@ -94,42 +94,29 @@ i {
 }
 
 @media screen and (min-width: 428px) {
-  h1 {
-    font-size: 28px;
-  }
-  p {
-    font-size: 18px;
-    line-height: 30px;
-  }
 }
 
 @media screen and (min-width: 480px) {
-  h1 {
-    font-size: 30px;
+  .logo {
+    max-width: 70%;
   }
 }
 
 @media screen and (min-width: 540px) {
-  h1 {
-    font-size: 32px;
-  }
-  p {
-    font-size: 20px;
-    line-height: 35px;
+  .logo {
+    max-width: 65%;
   }
 }
 
 @media screen and (min-width: 600px) {
+  .logo {
+    max-width: 60%;
+  }
 }
 
 @media screen and (min-width: 768px) {
-  h1 {
-    font-size: 34px;
-  }
-  p {
-    font-size: 22px;
-    margin-left: 20px;
-    margin-right: 20px;
+  .logo {
+    max-width: 55%;
   }
 }
 
@@ -140,9 +127,19 @@ i {
 }
 
 @media screen and (min-width: 1024px) {
+  .logo {
+    max-width: 50%;
+  }
+
+  p {
+    line-height: 35px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
+  .logo {
+    max-width: 45%;
+  }
 }
 
 @media screen and (min-width: 1440px) {
