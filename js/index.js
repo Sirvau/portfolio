@@ -34,7 +34,58 @@ readMoreButton.addEventListener("click", () => {
 
 
 
+
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+} 
+
+
 let slideIndex = 1;
+let startX, startY; 
+
+// Function to handle touchstart event
+function handleTouchStart(e) {
+  startX = e.touches[0].clientX;
+  startY = e.touches[0].clientY;
+}
+
+// Function to handle touchmove event
+function handleTouchMove(e) {
+  if (!startX || !startY) return;
+
+  let deltaX = e.touches[0].clientX - startX;
+  let deltaY = e.touches[0].clientY - startY;
+
+  if (Math.abs(deltaX) > Math.abs(deltaY)) {
+    // Horizontal swipe
+    if (deltaX > 0) {
+      plusSlides(-1); // Swipe right
+    } else {
+      plusSlides(1); // Swipe left
+    }
+  }
+
+  startX = null;
+  startY = null;
+}
+
+// Event listeners for touch events
+document.addEventListener("touchstart", handleTouchStart, false);
+document.addEventListener("touchmove", handleTouchMove, false);
+
 showSlides(slideIndex);
 
 // Next/previous controls
@@ -67,21 +118,3 @@ for (let i = 0; i < dots.length; i++) {
     currentSlide(i + 1);
   });
 }
-
-
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-} 
