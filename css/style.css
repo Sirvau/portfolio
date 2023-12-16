@@ -124,6 +124,25 @@ i {
   .logo {
     max-width: 50%;
   }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  p,
+  button,
+  .github,
+  .weblink {
+    font-size: 18px;
+  }
+
+  p {
+    line-height: 35px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
