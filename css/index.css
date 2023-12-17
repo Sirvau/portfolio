@@ -111,8 +111,16 @@ h1 {
   align-self: center;
 }
 
+#christmas_blog_image {
+  border: 10px solid #282c11;
+}
+
+#museum_image {
+  border: 10px solid #000318;
+}
+
 .text {
-  flex: 0.8;
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
