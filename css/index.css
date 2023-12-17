@@ -91,11 +91,35 @@ h1 {
 
 /* Card Section */
 .slideshow_container {
-  max-width: 85%;
+  max-width: 100%;
   height: auto;
   position: relative;
   margin: auto;
   border: 4px solid #252e3c;
+  text-align: center;
+}
+
+.slide_content {
+  display: flex;
+  flex-direction: row;
+}
+
+.image_container {
+  flex: 1;
+  padding-right: 10px;
+  margin-left: 10px;
+  align-self: center;
+}
+
+.text {
+  flex: 0.8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #252e3c;
+  font-size: 15px;
+  padding: 8px 12px;
+  bottom: 8px;
 }
 
 .mySlides {
@@ -338,6 +362,14 @@ h1 {
   }
   #signature {
     font-size: 30px;
+  }
+
+  .slideshow_container {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 
