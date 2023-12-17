@@ -160,11 +160,13 @@ h1 {
 }
 
 .numbertext {
-  color: #f2f2f2;
+  color: #252e3c;
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
   top: 0;
+  left: 10px;
+  font-weight: 600;
 }
 
 .dots_and_buttons_container {
@@ -426,16 +428,21 @@ h1 {
   .slideshow_container {
     max-width: 80%;
   }
+
+  .contact_icons {
+    justify-content: center;
+  }
 }
 
-@media screen and (min-width: 880px) {
+@media screen and (min-width: 800px) {
   header {
     padding-top: 90px;
     padding-bottom: 90px;
   }
 
   #about_me_section {
-    padding-top: 30px;
+    padding-top: 70px;
+    padding-bottom: 70px;
   }
 
   .wrapper {
@@ -462,10 +469,22 @@ h1 {
   }
 }
 
+@media screen and (min-width: 961px) {
+  header {
+    padding-top: 110px;
+    padding-bottom: 110px;
+  }
+
+  #about_me_section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   header {
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 
   #about_me_section {
@@ -520,13 +539,13 @@ h1 {
 
 @media screen and (min-width: 1440px) {
   header {
-    padding-top: 190px;
-    padding-bottom: 190px;
+    padding-top: 185px;
+    padding-bottom: 185px;
   }
 
   #about_me_section {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 135px;
+    padding-bottom: 135px;
   }
   #about_me_body_text_and_signature {
     margin-top: 120px;
@@ -599,5 +618,9 @@ h1 {
 
   #about_me_body_text_and_signature {
     margin-top: 200px;
+  }
+
+  #profile_image {
+    max-width: 65%;
   }
 }
