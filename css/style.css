@@ -74,6 +74,10 @@ i {
   padding-right: 15px;
 }
 
+.hide {
+  display: none;
+}
+
 /* Text colors */
 .light_text {
   color: #f2e9e4;
