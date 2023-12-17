@@ -34,7 +34,7 @@ readMoreButton.addEventListener("click", () => {
 
 
 
-
+//Card slider
 
 function showSlides(n) {
   let i;
@@ -56,13 +56,13 @@ function showSlides(n) {
 let slideIndex = 1;
 let startX, startY; 
 
-// Function to handle touchstart event
+//Touchstart event
 function handleTouchStart(e) {
   startX = e.touches[0].clientX;
   startY = e.touches[0].clientY;
 }
 
-// Function to handle touchmove event
+// Touchmove event
 function handleTouchMove(e) {
   if (!startX || !startY) return;
 
@@ -72,9 +72,9 @@ function handleTouchMove(e) {
   if (Math.abs(deltaX) > Math.abs(deltaY)) {
     // Horizontal swipe
     if (deltaX > 0) {
-      plusSlides(-1); // Swipe right
+      plusSlides(-1); 
     } else {
-      plusSlides(1); // Swipe left
+      plusSlides(1); 
     }
   }
 
@@ -88,17 +88,19 @@ document.addEventListener("touchmove", handleTouchMove, false);
 
 showSlides(slideIndex);
 
+
+// Thumbnail image
+function currentSlide(n) {
+  showSlides((slideIndex = n));
+}
+
+
 // Next/previous controls
 function plusSlides(n) {
   showSlides((slideIndex += n));
 }
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides((slideIndex = n));
-}
-
-// Event listeners for next and previous buttons
+//Next and previous buttons
 const prevButton = document.querySelector(".prev");
 const nextButton = document.querySelector(".next");
 
@@ -110,7 +112,7 @@ nextButton.addEventListener("click", () => {
   plusSlides(1);
 });
 
-// Event listeners for dot indicators
+// Dot indicators
 const dots = document.getElementsByClassName("dot");
 
 for (let i = 0; i < dots.length; i++) {
