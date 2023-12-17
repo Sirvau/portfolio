@@ -59,6 +59,10 @@ h1 {
   max-width: 90%;
 }
 
+.icon_links {
+  color: #f2e9e4;
+}
+
 /* Projects Section */
 #projects_section {
   margin-top: 20px;
